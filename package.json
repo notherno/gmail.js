@@ -1,0 +1,23 @@
+{
+  "name": "gmail.js",
+  "version": "1.0.0",
+  "description": "Node.js using Gmail API",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notherno/gmail.js.git"
+  },
+  "author": "Takaaki KITANO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notherno/gmail.js/issues"
+  },
+  "homepage": "https://github.com/notherno/gmail.js",
+  "bin": {
+    "gmail": "main.js"
+  },
+  "preferGlobal": true
+}
