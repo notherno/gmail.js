@@ -6,10 +6,8 @@ var readline = require('readline-sync');
 var request = require('request');
 var fs = require('fs');
 
-console.log('Hello Cmail!');
-
+// Print console args
 console.log(process.argv);
-
 console.log(process.env.HOME);
 
 if (process.argv[2] === 'init') {
@@ -35,6 +33,7 @@ if (process.argv[2] === 'init') {
     grant_type: 'authorization_code',
     code: code
   };
+
   var options = {
     uri: config.token_uri,
     form: params,
@@ -70,6 +69,7 @@ if (process.argv[2] === 'labels') {
       console.log("Body: ", body);
       return false;
     }
+
     var labels = JSON.parse(body).labels;
     // console.log(labels);
     for (var i = 0; i < labels.length; i++) {
@@ -80,3 +80,4 @@ if (process.argv[2] === 'labels') {
 
   });
 }
+
